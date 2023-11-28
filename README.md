@@ -1,59 +1,66 @@
-# Random_Quote_Extension
-#### Video Demo Link : 
-#### Description
+## Random Quote Extension
 
-## TODO:
-### Step 1:
-The first thing I did was to decide on the project I wanted to work on based various options available. I finally settled for for a chrome extension built using HTML and JavaScript.
+### Video Demo Link: [Insert Link Here]
 
-### Step 2:
-Was to put my idea together as a pseudocode. I had to outline the steps needed to create the chrome extension
-First step was knowing the exact chrome extension I wanted to create as there were various options avaialable. I thoughht of a currency converter, a background and text changer and also a random quote extension. I finally settled for a random quote extension as I had issues with the other ideas like getting the right API and browser restriction issues with the background changer.
+### Description
 
-### Step 3
-I had to learn what it entailed to create a chrome extension as I had never done this before. I watched videos online and also read some documentations just to get familiar with the way a chrome extension can be built using JavaScript.
+**TODO:**
 
-### Step 4
-Deciding the IDE to use. Either the Cs50 IDE or my local VScode. I settled for my local VScode as this was closer to day to day coding experience and trying to detach cs50 training wheels.
+#### Step 1: Project Decision
+The initial step involved selecting a project, and after considering various options, I settled on creating a Chrome extension using HTML and JavaScript.
 
-### Step 5
-After the above steps I dived into creating the random quote chrome extension.
+#### Step 2: Pseudocode
+To outline the steps needed to build the extension, I created a pseudocode. Initially considering ideas like a currency converter and a background/text changer, I encountered difficulties such as API restrictions and browser limitations. Eventually, I decided on a random quote extension due to its simplicity and compatibility.
 
-The files listed below were the files I had to create to get my chrome extension working:
-- index.html
-- manifest.json
-- script.js
-- icon.png
-- styles.css
-- api.js
+#### Step 3: Learning
+As a newcomer to Chrome extension development, I dedicated time to learning the essentials. I watched online videos and read documentation to gain familiarity with building Chrome extensions using JavaScript.
 
-Now let's delve into the content and functionalities of these files.
+#### Step 4: IDE Decision
+Choosing the appropriate Integrated Development Environment (IDE) was crucial. I weighed the options between the CS50 IDE and my local VSCode. Opting for VSCode, I aimed to detach from the CS50 training wheels for a more everyday coding experience.
 
-### index.html
+#### Step 5: Implementation
+With the groundwork laid, I delved into creating the random quote Chrome extension.
 
-- This file contains the structure of the page. The title, the body and also this is where we link the script.js file to using the script tag. For this project the index.html file contains an h3 tag , a p tag and a button. The h3 tag contains the header/title, the p tag hold the random quootes as fetched from the API set on the script.js file and the button tag which when clicked would trigger the fetching of the random quote from the API backend.
+#### What the Extension Does:
+The Random Quote Extension provides users with a simple and enjoyable experience. Once installed, users can click a button on their browser, triggering the extension to fetch and display a random quote on their screen. The extension aims to add a touch of inspiration or thoughtfulness to users' browsing experiences.
 
-### manifest.json
-- The manifest file is where the manifest version is declared, the title, the project description which in this instance is a random quote generation, the default icon is also set in this file, the default icon that would be displayed when the extension is dowloaded and the default pop page which is usually the default html file displayed in the browser when the extension is clicked on in the browser.
+#### Files Created:
 
-### Script.js
-- This file contains the logic on whicg the entire chrome extension runs. The elements created in the index.html file is accessed here using the getElementById function. I added event listeners to the element i.e the button which listens for the on click action then executes the function of fetching the API and displaying same on the index.html file. The script file in my opinion is the engine room for my chrome extension.
+- **index.html:**
+  This file serves as the structural foundation of the extension. It includes an `h3` tag for the title, a `p` tag to display quotes fetched from the API set in `script.js`, and a `button` tag to trigger the fetching of a random quote from the API backend.
 
-### icon.png
-- This basicall refers to the icon/image displayed on my chrome extension.
+- **manifest.json:**
+  The manifest file contains essential information such as the manifest version, title, project description (random quote generation), default icon for download, and the default pop page—typically the default HTML file displayed in the browser when the extension is clicked.
 
-### styles.css
-- I used this file to basically set the user interface of my chrome extension. I defined the style and appearnace of my extension in this file and this was made possible by accessing the elements by id and tag types e.g body.
+- **script.js:**
+  The logic behind the entire Chrome extension resides in this file. Using `getElementById`, the script accesses elements created in `index.html`. Event listeners are added to elements, particularly the button, to fetch quotes from the API and display them on the page.
 
-### api.js
-- I created an api.js file to help hide my api i.e to separate it from the main code but it kept throwing errors when I tried accessing it from that file. I couldn't figure out why.
+- **icon.png:**
+  This file represents the icon or image displayed on the Chrome extension.
 
-### Challenges Faced while working on this project
-- Getting the right API was a challenge as some had restrictions
-- Knowing the right manifest version to use and the corresponding syntax
-- Getting the extension to run in the browser due to the script running before the html file. I had to include (DOMContentLoaded) at the top level before the main code in the script.js file
+- **styles.css:**
+  The styling of the extension's user interface is defined in this file. Accessing elements by ID and tag types (e.g., `body`), I specified the appearance and style of the extension.
 
-### Learnings from the project
-- I learnt the use of the manifest.json
-- I learnt the importance of the DOMContentLoaded as I experienced challenges running chrome extension when this was this was not included in my code.
+- **api.js:**
+  Created to hide the API and separate it from the main code. Despite encountering errors when accessing it from that file, the intention was to enhance code organization.
 
+#### Challenges Faced:
+
+1. **API Selection:**
+   Identifying the right API posed a challenge due to some having restrictions.
+
+2. **Manifest Version:**
+   Understanding the appropriate manifest version and corresponding syntax.
+
+3. **Extension Runtime:**
+   Ensuring the extension runs in the browser, resolved by including `(DOMContentLoaded)` before the main code in `script.js`.
+
+#### Learnings:
+
+- **Manifest.json Usage:**
+  Acquired knowledge about using `manifest.json` for Chrome extension configuration.
+
+- **DOMContentLoaded Importance:**
+  Realized the significance of `(DOMContentLoaded)` to address challenges encountered when running Chrome extensions.
+
+In conclusion, the Random Quote Extension project provided valuable insights into Chrome extension development, including API handling, manifest configuration, and the importance of proper event handling for extension functionality.
