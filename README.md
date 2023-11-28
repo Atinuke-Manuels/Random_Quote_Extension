@@ -2,6 +2,30 @@
 
 ### Video Demo Link: [Insert Link Here]
 
+### Testing the Random Quote Chrome Extension:
+
+1. **Open Chrome and Go to Extensions:**
+   - Open Google Chrome.
+   - In the top-right corner, click on the three dots to open the menu.
+   - Go to "More tools" and then select "Extensions."
+
+2. **Enable Developer Mode:**
+   - In the Extensions page, enable "Developer mode" located at the top-right.
+
+3. **Load Unpacked Extension:**
+   - Click on the "Load unpacked" button that appears after enabling Developer mode.
+   - Select the folder where your extension files (including `manifest.json`) are located.
+   - Click "Select Folder."
+
+4. **Verify Extension Loading:**
+   - Your extension should now appear in the list of installed extensions.
+   - It will also add an icon to the Chrome toolbar.
+
+5. **Test the Extension:**
+   - Click on the extension icon in the toolbar to open the popup.
+   - Verify that the popup displays your HTML content, and the JavaScript logic works as expected.
+   - Test any functionality, such as fetching and displaying random quotes.
+
 ### Description
 
 **TODO:**
