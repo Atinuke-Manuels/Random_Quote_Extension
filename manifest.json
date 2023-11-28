@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Random Quotes",
+  "version": "1.0",
+  "description": "Displays random quotes in a Chrome extension.",
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  "permissions": [
+    "storage"
+  ]
+}
