@@ -1,6 +1,6 @@
 ## Random Quote Extension
 
-### Video Demo Link: [Insert Link Here]
+### Video Demo Link: https://youtu.be/DF8DvC4v878
 
 ### Testing the Random Quote Chrome Extension:
 
